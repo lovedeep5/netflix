@@ -1,0 +1,13 @@
+.header-wrapper{
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
+    top: 0;
+    left: 0;
+}
+.header-wrapper .header-logo{
+    padding: 5px;
+}
+.header-wrapper img {
+    max-width: 200px;
+}

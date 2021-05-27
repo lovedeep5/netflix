@@ -1,0 +1,87 @@
+.banner-wrapper{
+    position: relative;
+}
+.banner-wrapper .banner{
+
+    min-height: 400px;
+    color: white;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+
+}
+.banner-wrapper .banner:before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right , rgba(22,22,22,0.7) , transparent);
+    z-index: 0;
+}
+.banner-wrapper .banner:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to top , rgba(22,22,22,1.0) , transparent);
+    z-index: 0;
+}
+.banner-wrapper .banner-content{
+    z-index: 1;
+}
+.banner-wrapper .banner-copy{
+    padding: 0px 15px;
+}
+.banner-wrapper .banner-copy span {
+    display: block;
+}
+.banner-wrapper .movie-title {
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.banner-wrapper .movie-desc {
+    font-size: 1rem;
+    letter-spacing: 0.025em;
+    line-height: 1.5;
+    max-width: 100%;
+}
+.banner-wrapper .banner-btn {
+    padding-top: 20px;
+}
+.banner-wrapper .banner-btn button{
+    padding: 10px 15px;
+    font-size: 18px;
+    background: rgba(255,255,255,0.5);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    letter-spacing: 0.020em;
+    margin-right: 10px;
+    display: inline-block;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.banner-wrapper .banner-btn button:hover,
+.banner-wrapper .banner-btn button:active,
+.banner-wrapper .banner-btn button:focus {
+    opacity: 0.7;
+}
+@media(min-width: 768px){
+    .banner-wrapper .movie-desc, .banner-wrapper .movie-title{
+        max-width: 50vw;
+    }
+}
+@media(min-width: 992px){
+    .banner-wrapper .banner {
+        min-height: 80vh;
+    }
+    .banner-wrapper .movie-desc, .banner-wrapper .movie-title{
+        max-width: 40vw;
+    }
+}

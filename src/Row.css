@@ -1,0 +1,27 @@
+.row{
+    padding: 10px;
+}
+.row__posterContainer {
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+    padding: 10px 0px;
+}
+
+.row__posterContainer::-webkit-scrollbar{
+    display: none;
+}
+.row__posterContainer img {
+    max-height: 200px;
+    transition: 0.5s;
+}
+.row__posterContainer.landscape img {
+    max-height: 120px;
+}
+.row__posterContainer img:hover{
+    transform: scale(1.1);
+}
+.row h2{
+    color: rgba(255,255,255,0.8);
+
+}
